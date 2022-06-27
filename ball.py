@@ -2,7 +2,7 @@ from turtle import Turtle
 
 INIT_POSITION = (0, -196)
 BALL_COLOR = "coral1"
-INIT_SPEED = 2
+INIT_SPEED = 2.5
 
 
 class Ball(Turtle):
@@ -31,8 +31,8 @@ class Ball(Turtle):
         self.move_y *= -1
 
     def increase_speed(self):
-        self.move_x *= 1.2
-        self.move_y *= 1.2
+        self.move_x *= 1.1
+        self.move_y *= 1.1
 
     def reset_position(self):
         self.goto(INIT_POSITION)
